@@ -119,6 +119,7 @@ function lightMod() {
     document.getElementById("navBar").style.backgroundColor = "#1E1E1E";
     //푸터
     $("footer").css("background-color", "#1E1E1E");
+    $("footer").css("color", "#1E1E1E");
     lightState = false;
   } else {
     document.getElementById("circle1").style.backgroundColor = "white";
@@ -152,6 +153,7 @@ function lightMod() {
     document.getElementById("navBar").style.backgroundColor = "white";
     //푸터
     $("footer").css("background-color", "white");
+    $("footer").css("color", "white");
     lightState = true;
   }
 }
