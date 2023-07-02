@@ -1,3 +1,16 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@font-face {
+  font-family: 'Pretendard';
+  src: url('./images/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-display: swap;
+  letter-spacing: 0.3rem;
+}
+
+html{
+  font-family: 'Pretendard';
+}
+
 .memoInput:focus {
   outline: none;
 }
@@ -15,7 +28,7 @@
   border: 3px solid #f0f0f0;
 }
 
-nav {
+#navBar{
   position: fixed;
   top: 0;
   z-index: 10;
@@ -40,9 +53,9 @@ footer {
   padding: 1.8rem 2.5rem;
   width: 100%;
   background-color: white;
-  font-size: 1rem;
+  font-size: 0.6rem;
   font-weight: 500;
-  color: #ffcaca;
+  color: white;
   letter-spacing: 0.1rem;
   line-height: 1.8rem;
 }
@@ -51,9 +64,9 @@ footer {
   padding: 1rem;
 }
 
-.container {
+#container {
   margin-top: 80px;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
   width: 100%;
   background-color: #f6f6f6;
   text-align: center;
@@ -63,7 +76,15 @@ footer {
   padding-bottom: 10px;
 }
 
+textarea::placeholder {
+  color: palevioletred;
+  font-family: 'Pretendard';
+}
+
 #inputField #memoInput {
+  font-family: 'Pretendard';
+  letter-spacing: 0.02rem;
+
   border: 1px solid #e7e7e7;
   border-radius: 5px;
   padding: 20px;
@@ -76,6 +97,8 @@ footer {
 
   font-size: 1.2rem;
   line-height: 1.8rem;
+
+  filter: drop-shadow(0px 0px 7px #e1dede);
 }
 
 #inputField #memoInput:focus {
@@ -87,6 +110,7 @@ footer {
 }
 
 #inputField #addBtn {
+  transition: 0.2s;
   margin-top: 1rem;
   font-weight: 500;
   position: relative;
@@ -99,15 +123,20 @@ footer {
   border-radius: 2rem;
   cursor: pointer;
   vertical-align: middle;
+
+  filter: drop-shadow(0px 0px 5px #ffcaca);
 }
 
 #inputField #addBtn:hover {
   transition: 0.2s;
   border: 2px solid palevioletred;
   color: palevioletred;
+
+  filter: drop-shadow(0px 0px 5px palevioletred);
 }
 
 #memoList {
+
   width: 100%;
   max-width: 50rem;
   list-style: none;
@@ -117,6 +146,11 @@ footer {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.6rem;
+
+  word-break:break-all;
+
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .slide-right {
@@ -155,6 +189,8 @@ footer {
   border-radius: 5px;
   user-select: none;
   background-color: white;
+
+  filter: drop-shadow(0px 0px 7px #e1dede);
 }
 
 #memoList button {
@@ -172,7 +208,7 @@ footer {
 
 #memoList li.complete {
   text-decoration: line-through;
-  color: #dadada;
+  /* color: #dadada; */
 }
 
 #memoList li.complete button::after {
@@ -187,6 +223,7 @@ footer {
 }
 
 #resetBtn {
+  transition: 0.2s;
   border: none;
   color: palevioletred;
   font-weight: 600;
@@ -194,10 +231,61 @@ footer {
   background-color: none;
   padding: 0.5rem 1rem;
   border-radius: 50px;
+  background-color: #f6f6f6;
 }
 
 #resetBtn:hover {
-  transition: 0.5s;
+  transition: 0.2s;
   border: 2px solid palevioletred;
   font-size: 1rem;
+}
+
+#menuCircle{
+  transition: 0.3s;
+  background-color: #ffcaca;
+  border-radius: 100%;
+
+  width: 300px;
+  height: 300px;
+
+  position: fixed;
+  bottom: -100px;
+  overflow: hidden;
+  z-index: 11;
+
+  filter: drop-shadow(0px 0px 10px #ffcaca);
+}
+
+#menuCircle:hover{
+  transition: 0.3s;
+  width: 320px;
+  height: 320px;
+  bottom: -80px;
+}
+
+#circle1{
+  text-align: center;
+  transition: 0.3s;
+
+  background-color: white;
+  border-radius: 100%;
+
+  width: 200px;
+  height: 200px;
+
+  position: fixed;
+  bottom: -50px;
+  overflow: hidden;
+  z-index: 12;
+
+  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+#circle1:hover{
+  transition: 0.3s;
+
+  width: 220px;
+  height: 220px;
+
+  bottom: -30px;
 }
