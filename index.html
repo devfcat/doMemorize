@@ -1,48 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Memorize</title>
 
     <link rel="stylesheet" href="./stylesheet.css" />
-  </head>
+</head>
 
-  <body>
+<body>
+    <div id="modal" onclick="modalOff();">
+        <div id="modalBody">
+            구현 준비중입니다. <br>
+            [한 번 더 클릭하여 창을 종료합니다.]
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="script.js"></script>
 
     <nav id="navBar">
-      <div id="title"><img src="logo.png" height="30px" type="logo" /></div>
-      <!-- <div class="user"><img src="user.png" width="30px"></div> -->
+        <div id="title"><img src="logo.png" height="30px" type="logo" /></div>
+        <!-- <div class="user"><img src="user.png" width="30px"></div> -->
     </nav>
 
     <div id="container">
-      <div id="inputField">
-        <textarea
-          id="memoInput"
-          placeholder="* memorize로 메모를 추가하세요. 메모를 한 번 눌러 임무를 완료합니다. 메모를 두 번 눌러 삭제합니다."
-          onkeydown="resize(this)"
-          onkeyup="resize(this)"
-        ></textarea>
-        <br />
-        <button type="button" id="addBtn" onclick="createMemo();">
-          memorize
-        </button>
-      </div>
-      <ul id="memoList"></ul>
-      <button id="resetBtn" onclick="deleteAll();">Reset</button>
+        <div id="inputField">
+            <textarea id="memoInput" placeholder="* memorize로 메모를 추가하세요. 메모를 한 번 눌러 임무를 완료합니다. 메모를 두 번 눌러 삭제합니다." onkeydown="resize(this)" onkeyup="resize(this)"></textarea>
+            <br />
+            <button type="button" id="addBtn" onclick="createMemo();">
+                memorize
+            </button>
+        </div>
+        <ul id="memoList"></ul>
+        <button id="resetBtn" onclick="deleteAll();">Reset</button>
     </div>
     <div id="info">
-      E-mail | devfcat@gmail.com
-      <br />
-      Github | github.com/devfcat
-      <br />
-      Copyright © 2023 devfcat. All rights reserved.
+        E-mail | devfcat@gmail.com
+        <br />
+        Github | github.com/devfcat
+        <br />
+        Copyright © 2023 devfcat. All rights reserved.
     </div>
 
-    <div id="menuCircle">
-      
+    <div id="menuCircle" onclick="modalOn();">
+
     </div>
 
     <div id="circle1" onclick="lightMod();">
@@ -57,5 +59,4 @@
       <br />
       Copyright © 2023 devfcat. All rights reserved.
     </footer> -->
-  </body>
-</html>
+</body></html>
