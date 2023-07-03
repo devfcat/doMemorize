@@ -1,49 +1,50 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
 @font-face {
-  font-family: 'Pretendard';
-  src: url('./images/Pretendard-Thin.woff') format('woff');
-  font-weight: 100;
-  font-display: swap;
-  letter-spacing: 0.3rem;
+    font-family: 'Pretendard';
+    src: url('./images/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-display: swap;
+    letter-spacing: 0.3rem;
 }
 
-html{
-  font-family: 'Pretendard';
+html {
+    font-family: 'Pretendard';
 }
 
 .memoInput:focus {
-  outline: none;
+    outline: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .user {
-  position: fixed;
-  top: 10px;
-  right: 12px;
-  border-radius: 100%;
-  padding: 0.3rem 0.4rem;
-  border: 3px solid #f0f0f0;
+    position: fixed;
+    top: 10px;
+    right: 12px;
+    border-radius: 100%;
+    padding: 0.3rem 0.4rem;
+    border: 3px solid #f0f0f0;
 }
 
-#navBar{
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  background-color: white;
-  width: 100%;
-  text-align: center;
+#navBar {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    text-align: center;
 }
 
 body {
-  background-color: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-  min-height: 100vh;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
 /* footer {
@@ -60,115 +61,116 @@ body {
   line-height: 1.8rem;
 } */
 
-#info{
-  padding: 1.8rem 2.5rem;
-  width: 100%;
-  font-size: 0.7rem;
-  font-weight: 500;
-  color: #ffcaca;
-  letter-spacing: 0.1rem;
-  line-height: 1.8rem;
-  margin-bottom: 230px;
-  text-align: center;
+#info {
+    padding: 1.8rem 2.5rem;
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #ffcaca;
+    letter-spacing: 0.1rem;
+    line-height: 1.8rem;
+    margin-bottom: 230px;
+    text-align: center;
 }
 
 #title {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 #container {
-  margin-top: 80px;
-  margin-bottom: 10px;
-  width: 100%;
-  background-color: #f6f6f6;
-  text-align: center;
-  padding-top: 40px;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #f6f6f6;
+    text-align: center;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
 }
 
 textarea::placeholder {
-  color: palevioletred;
-  font-family: 'Pretendard';
-  font-size: 1rem;
+    color: palevioletred;
+    font-family: 'Pretendard';
+    font-size: 1rem;
 }
 
 #inputField #memoInput {
-  font-family: 'Pretendard';
-  letter-spacing: 0.02rem;
+    font-family: 'Pretendard';
+    letter-spacing: 0.02rem;
 
-  border: 1px solid #e7e7e7;
-  border-radius: 5px;
-  padding: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 5px;
+    padding: 20px;
 
-  width: 100%;
-  overflow-y: hidden;
-  resize: none;
-  min-height: 10rem;
-  max-width: 50rem;
+    width: 100%;
+    overflow-y: hidden;
+    resize: none;
+    min-height: 10rem;
+    max-width: 50rem;
 
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 
-  filter: drop-shadow(0px 0px 7px #e1dede);
+    filter: drop-shadow(0px 0px 7px #e1dede);
 }
 
 #inputField #memoInput:focus {
-  outline: none;
+    outline: none;
 }
 
 #inputfield {
-  float: left;
+    float: left;
 }
 
 #inputField #addBtn {
-  transition: 0.2s;
-  margin-top: 1rem;
-  font-weight: 500;
-  position: relative;
-  width: 150px;
-  font-size: 1.2rem;
-  border: none;
-  background-color: #ffcaca;
-  color: white;
-  padding: 1rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  vertical-align: middle;
+    transition: 0.2s;
+    margin-top: 1rem;
+    font-weight: 500;
+    position: relative;
+    width: 150px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #ffcaca;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    vertical-align: middle;
 
-  filter: drop-shadow(0px 0px 5px #ffcaca);
+    filter: drop-shadow(0px 0px 5px #ffcaca);
 }
 
 #inputField #addBtn:hover {
-  transition: 0.2s;
-  border: 2px solid palevioletred;
-  color: palevioletred;
+    transition: 0.2s;
+    border: 2px solid palevioletred;
+    color: palevioletred;
 
-  filter: drop-shadow(0px 0px 5px palevioletred);
+    filter: drop-shadow(0px 0px 5px palevioletred);
 }
 
 #memoList {
 
-  width: 100%;
-  max-width: 50rem;
-  list-style: none;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: left;
-  font-size: 1.1rem;
-  font-weight: 500;
-  line-height: 1.6rem;
+    width: 100%;
+    max-width: 50rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
 
-  word-break:break-all;
+    word-break: break-all;
 
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .slide-right {
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+
 /* ----------------------------------------------
  * Generated by Animista on 2023-7-3 3:29:35
  * Licensed under FreeBSD License.
@@ -184,121 +186,156 @@ textarea::placeholder {
  * ---------------------------------------------- */
 
 @keyframes slide-right {
-  0% {
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
+    0% {
+        -webkit-transform: translateX(-50px);
+        transform: translateX(-50px);
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
 }
 
 #memoList li {
-  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  border: 1px solid #e7e7e7;
-  padding: 20px;
-  margin: 1.2rem 0;
-  border-radius: 5px;
-  user-select: none;
-  background-color: white;
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    margin: 1.2rem 0;
+    border-radius: 5px;
+    user-select: none;
+    background-color: white;
 
-  filter: drop-shadow(0px 0px 7px #e1dede);
+    filter: drop-shadow(0px 0px 7px #e1dede);
 }
 
 #memoList button {
-  position: inherit;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  background-color: #f0f0f0;
-  margin-left: 15px;
-  margin-right: 20px;
-  border: none;
-  border-radius: 100%;
-  cursor: pointer;
+    position: inherit;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0;
+    margin-left: 15px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 #memoList li.complete {
-  text-decoration: line-through;
-  /* color: #dadada; */
+    text-decoration: line-through;
+    /* color: #dadada; */
 }
 
 #memoList li.complete button::after {
-  margin-left: 1.3px;
-  content: "";
-  display: block;
-  width: 5px;
-  height: 10px;
-  transform: translate(-2px, -2px) rotate(45deg);
-  border-right: 4px solid #ffcaca;
-  border-bottom: 4px solid #ffcaca;
+    margin-left: 1.3px;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    transform: translate(-2px, -2px) rotate(45deg);
+    border-right: 4px solid #ffcaca;
+    border-bottom: 4px solid #ffcaca;
 }
 
 #resetBtn {
-  transition: 0.2s;
-  border: none;
-  color: palevioletred;
-  font-weight: 600;
-  font-size: 0.8rem;
-  background-color: none;
-  padding: 0.5rem 1rem;
-  border-radius: 50px;
-  background-color: #f6f6f6;
+    transition: 0.2s;
+    border: none;
+    color: palevioletred;
+    font-weight: 600;
+    font-size: 0.8rem;
+    background-color: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background-color: #f6f6f6;
 }
 
 #resetBtn:hover {
-  transition: 0.2s;
-  border: 2px solid palevioletred;
-  font-size: 1rem;
+    transition: 0.2s;
+    border: 2px solid palevioletred;
+    font-size: 1rem;
 }
 
-#menuCircle{
-  transition: 0.3s;
-  background-color: #ffcaca;
-  border-radius: 100%;
+#menuCircle {
+    transition: 0.3s;
+    background-color: #ffcaca;
+    border-radius: 100%;
 
-  width: 300px;
-  height: 300px;
+    width: 300px;
+    height: 300px;
 
-  position: fixed;
-  bottom: -100px;
-  overflow: hidden;
-  z-index: 11;
+    position: fixed;
+    bottom: -100px;
+    overflow: hidden;
+    z-index: 11;
 
-  filter: drop-shadow(0px 0px 10px #ffcaca);
+    filter: drop-shadow(0px 0px 10px #ffcaca);
 }
 
-#menuCircle:hover{
-  transition: 0.3s;
-  width: 320px;
-  height: 320px;
-  bottom: -80px;
+#menuCircle:hover {
+    transition: 0.3s;
+    width: 320px;
+    height: 320px;
+    bottom: -80px;
 }
 
-#circle1{
-  text-align: center;
-  transition: 0.3s;
+#circle1 {
+    text-align: center;
+    transition: 0.3s;
 
-  background-color: white;
-  border-radius: 100%;
+    background-color: white;
+    border-radius: 100%;
 
-  width: 200px;
-  height: 200px;
+    width: 200px;
+    height: 200px;
 
-  position: fixed;
-  bottom: -50px;
-  overflow: hidden;
-  z-index: 12;
+    position: fixed;
+    bottom: -50px;
+    overflow: hidden;
+    z-index: 12;
 
-  filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
 }
 
-#circle1:hover{
-  transition: 0.3s;
+#circle1:hover {
+    transition: 0.3s;
 
-  width: 220px;
-  height: 220px;
+    width: 220px;
+    height: 220px;
 
-  bottom: -30px;
+    bottom: -30px;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+
+}
+
+#modalBody {
+    position: fixed;
+    z-index: 30;
+    top: 50%;
+    left: 50%;
+
+    width: 450px;
+    height: 250px;
+    padding: 40px;
+
+    text-align: center;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+
+    transform: translateX(-50%) translateY(-50%);
 }
