@@ -6,31 +6,37 @@ var lightState = true;
 let memos = JSON.parse(localStorage.getItem('memos'));
 memos = memos ?? [];
 
+
 function addMemo() {
     let newMemo = {};
     let memoContent = document.querySelector('#memoInput').value;
 
-    // id 값이 로컬스토리지에 없다면 키를 생성하고 0부터 id 설정
-    let id = JSON.parse(localStorage.getItem('id'));
-    id = id ?? 0;
+    if (memoContent != "") {
 
-    // newMemo 객체에 id, 제목, 내용, 날짜 저장
-    newMemo.id = id;
-    newMemo.content = memoContent;
-    memos.push(newMemo);
+        // id 값이 로컬스토리지에 없다면 키를 생성하고 0부터 id 설정
+        let id = JSON.parse(localStorage.getItem('id'));
+        id = id ?? 0;
 
-    // setMemo() : 2번에서 만들 메모들 화면에 보여주는 함수
-    setMemo();
+        // newMemo 객체에 id, 제목, 내용, 날짜 저장
+        newMemo.id = id;
+        newMemo.content = memoContent;
+        memos.push(newMemo);
 
-    // 로컬스토리지에 memos 키값으로 저장하기
-    // 로컬스토리지에 id 저장하기
-    localStorage.setItem('memos', JSON.stringify(memos));
-    localStorage.setItem('id', JSON.stringify(++id));
+        // setMemo() : 2번에서 만들 메모들 화면에 보여주는 함수
+        setMemo();
+
+        // 로컬스토리지에 memos 키값으로 저장하기
+        // 로컬스토리지에 id 저장하기
+        localStorage.setItem('memos', JSON.stringify(memos));
+        localStorage.setItem('id', JSON.stringify(++id));
 
 
-    document.querySelector('#memoInput').value = null;
+        document.querySelector('#memoInput').value = null;
 
-
+    }
+    else{
+        document.querySelector('#memoInput').value = "내용을 입력해주세요.";
+    }
 }
 
 function resize(obj) {
@@ -209,7 +215,8 @@ function lightMod() {
         lightState = true;
     }
 }
-$(document).ready(function(){
-	//페이지 로드 시 실행할 코드 구현
+
+$(document).ready(function () {
+    //페이지 로드 시 실행할 코드 구현
     setMemo();
 });
